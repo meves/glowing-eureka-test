@@ -1,0 +1,72 @@
+$black: #000; /*$color1*/
+$dark-dark-blue: #0e1821; /*color2*/
+$dark-blue: #09152a; /*$color6*/
+$gray-blue: #44535e; /*$color3*/
+$blue-violet: #344D6B; /*$sign*/
+$blue: #225D7D;
+$light-blue: #6FA6C5; /*bg-color*/
+$light-bluesky: #9ec0ff;
+$bluesky: #508cfd;
+$dark-bluesky: #1769ff;
+$gray-seawave: #798f8c; /*$color4*/
+$white: #fff; /*$color5*/
+$transparent: transparent;
+$red: #da2020;
+$gray: #ccc;
+
+/* nav */
+$bg-nav: $black;
+$bg-logo: $black;
+$bg-item--hover: $gray-blue;
+$bg-item--active: $gray-seawave;
+$color-logo: $white;
+$color-nav-link: $white;
+$color-nav-link-hover: $gray;
+$color-separate: $white;
+
+/* header */
+$bg-header: $light-blue;
+$color-header: $white;
+$header-shadow: $white;
+
+/* aboutMe*/
+$bg-aboutMe: $white;
+$bg-sign: $blue-violet;
+$border-aboutMe: $white;
+
+$color-aboutMe-header: $black;
+$color-aboutMe-text: $dark-dark-blue;
+$color-aboutMe-desc: $white;
+$aboutMe-shadow: $gray;
+$aboutMe-photo-shadow: $white;
+
+/* projects */
+$bg-top-color: $white;
+$bg-two-point-color: $light-bluesky;
+$bg-three-point-color: $bluesky;
+$bg-four-point-color: $dark-bluesky; 
+$bg-bottom-color: $dark-blue;
+
+$color-project: $white;
+
+/* feedback */
+$bg-feedback: $dark-blue;
+$bg-submit: $dark-blue;
+$bg-submit-hover: $white;
+
+$color-feedback: $white;
+$color-social: $gray-blue;
+$color-placeholder: $gray-blue;
+$color-input: $gray-blue;
+$color-submit: $white;
+$color-submit-hover: $dark-blue;
+$color-active: $black;
+
+/* footer */
+$bg-footer: $black;
+
+$color-footer: $white;
+
+/*//*/
+$ss: 100vw;
+

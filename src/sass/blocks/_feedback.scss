@@ -1,0 +1,129 @@
+.feedback {
+	text-align: center;
+	background-color: $bg-feedback;
+	color: $color-feedback;
+	
+	.feedback__title {
+		font-size: 1.8rem;
+		margin-top: 1em;
+		margin-bottom: 0.3em;
+		line-height: 1;		
+	}
+	
+	.feedback__description {
+		line-height: 1.4;
+		margin-bottom: 0;
+	}	
+
+	.feedback__form {
+		margin-bottom: 0;
+		color: $color-placeholder;		
+	}
+
+	.feedback__input::placeholder,
+	.feedback__textarea::placeholder {
+		color: $color-input;
+	}
+
+	.feedback__textarea {
+		margin-bottom: 0.3em;
+	}
+
+	.feedback__label {
+		margin-bottom: 0.3em;
+	}
+
+	.feedback__input[type="submit"] {
+		font-size: 1rem;
+		width: 75%;
+		height: 100%;
+		padding: 0.25em 0.75em 0.2em;
+		margin-top: 0.7em;
+		outline: none;
+		border-radius: 25%;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-weight: bold;
+		background-color: $bg-submit;
+		color: $color-submit;
+		border: 3px solid $color-submit;
+		transition: background-color 0.5s,
+					color 0.5s,
+					border 0.5s;
+	}
+
+	.feedback__input[type="submit"]:hover {
+		cursor: pointer;
+			background-color: $bg-submit-hover;
+			color: $color-submit-hover;
+			border: 3px solid $color-submit;
+	}
+
+	.feedback__input[type="submit"]:active {
+			box-shadow: inset 0 0 0.2em $color-active;
+			background-color: $color-active;
+			color: $color-submit;
+	}
+}
+
+.social-links {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 2em;
+	padding-right: 1.5em;
+	
+	.social-links__link {
+		text-decoration: none;
+		
+		line-height: 1;
+	}
+
+	.social-links__link:hover {
+		text-decoration: none;			
+	}
+
+	.social-links__item {
+		font-size: 1.3rem;
+		color: $color-feedback;
+		transition: transform 0.3s ease-in,
+		color 0.15s ease-in;
+	}	
+
+	.social-links__item:hover {
+		color: $color-social;	
+		transform: scale(1.5);							
+	}
+}
+
+/* media */
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 34.375em) {/*550px*/
+	.feedback {
+		.social-links {
+			padding-left: 1em;
+			padding-right: 0.8em;
+		}		
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 46.875em) {/*750px*/
+	.feedback {
+
+		.social-links {
+			padding-left: 1.2em;
+			padding-right: 1.0em;
+		}
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 62.5em) {/*1000px*/
+	.feedback {
+
+		.social-links {
+			padding-left: 1.5em;
+			padding-right: 1.2em;				
+		}
+	}
+}

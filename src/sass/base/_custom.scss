@@ -1,0 +1,17 @@
+:root {
+	font-size: calc(0.7em + 0.5vw);
+	box-sizing: content-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1rem;
+}
+
+.hidden {
+	position: absolute;
+	visibility: hidden;
+}

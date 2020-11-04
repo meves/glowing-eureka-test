@@ -1,0 +1,14 @@
+.footer {
+    background-color: $bg-footer;
+    color: $color-footer;
+    padding-top: 1em;
+
+    .footer__text {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.2;
+        margin-bottom: 1em;
+        color: inherit;
+        text-decoration: none;
+    }
+}

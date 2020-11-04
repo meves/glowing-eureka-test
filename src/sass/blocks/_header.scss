@@ -1,0 +1,82 @@
+.header {
+	background-color: $bg-header;
+	background-image: url('./../img/bg/sky-cold-fog-small.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;	
+	background-size: cover;
+	padding-top: 5.5em;
+	padding-bottom: 1.5em;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.header__title {
+		font-size: 2rem;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: $color-header;
+	}
+
+	.header__subtitle {
+		font-size: 1.8rem;
+		text-align: center;
+		font-weight: normal;
+		letter-spacing: 0.1em;
+		color: $color-header;	
+		margin-bottom: 0;
+	}
+}
+
+/* media */
+@media (min-width: 31.25em) {/*500px*/
+	.header {		
+		padding-top: 7.5em;
+		padding-bottom: 3.5em;		
+	}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 34.375em) {/*550px*/
+	.header {
+		padding-top: 13em;
+		padding-bottom: 9em;
+
+		.header__title {
+			text-shadow: 0 0 2px 1px $header-shadow;
+		}
+
+		.header__subtitle {
+			text-shadow: 0 0 2px 1px $header-shadow;
+		}
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 46.875em) {/*750px*/
+	.header {
+		background-image: url('./../img/bg/sky-cold-fog-medium.jpg');
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		padding-top: 18em;
+		padding-bottom: 18em;		
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 75em) {/*1200px*/
+	
+	.header {
+		background-image: url('./../img/bg/sky-cold-fog-large.jpg');
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		padding-top: 20em;
+		padding-bottom: 16em;
+	}	
+}	

@@ -1,0 +1,12 @@
+/* general styles */
+@import 'base/vars';
+@import 'base/normalize';
+@import 'base/skeleton';
+@import 'base/custom';
+/* block styles */
+@import 'blocks/nav';
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/projects';
+@import 'blocks/feedback';
+@import 'blocks/footer';

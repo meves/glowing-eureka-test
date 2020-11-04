@@ -1,0 +1,99 @@
+.about {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-top: 1px solid $border-aboutMe;
+	border-bottom: 1px solid $border-aboutMe;	
+	background-color: $bg-aboutMe;
+	
+	.about__title {
+		margin-bottom: 0.5em;
+		font-size: 1.75rem;
+		line-height: 1;
+		text-transform: uppercase;	
+		letter-spacing: 0.1em;
+		color: $color-aboutMe-header;
+		text-shadow: 0.25em 0.25em 0.25em $aboutMe-shadow;
+	}
+
+	.about__text {
+		line-height: 1.4;
+		color: $color-aboutMe-text;
+		text-align: justify;
+		margin-bottom: 1.2em;				
+	}
+
+	.about__text:first-letter {
+		font-family: 'Lobster', cursive;
+		font-size: 1.125rem;
+		letter-spacing: 0.05em;
+	}
+	
+
+	.about__image {
+		max-width: 40vmin;
+		transition: transform 0.5s ease-in,
+					box-shadow 0.5s ease-in;
+		box-shadow: 0.625em 0.625em 0.625em rgba(64, 64, 64, 0.5);
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.about__image:hover {
+		transform: scale(1.1);
+		box-shadow: 1em 1em 1em rgba(100, 100, 100, 0.5);
+		cursor: pointer;
+	}
+
+	.about__photo {
+		width: 100%;
+		box-shadow: 0.5em 0.5em -0.5em $aboutMe-photo-shadow;
+		display: block;					
+	}		
+	
+	.about__description {
+		font-size: 0.5rem;
+		background-color: $blue-violet;
+		padding: 0.1875em 0 0.1875em 0.3125em;
+		letter-spacing: 0.1em;	
+		color: $color-aboutMe-desc;
+	}
+}
+
+/* media */
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 34.375em) {/*550px*/
+	.about {		
+
+		.about-text {
+			margin-bottom: 0;
+		}
+
+		.about__image {
+			width: 25vmin;			
+		}
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 46.875em) {/*750px*/
+	.about {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 62.5em) {/*1000px*/
+	.about {
+		padding-top: 5em;
+		padding-bottom: 5em;
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 75em) {/*1200px*/
+	.about {
+		padding-top: 7em;
+		padding-bottom: 9em;
+	}
+}
