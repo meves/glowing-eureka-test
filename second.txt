@@ -1,1 +1,2 @@
 This is a second file, added to my local branch main from server origin in project eureca
+The second change of file second.txt on branch main
